@@ -60,7 +60,7 @@
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/radioGroupTeam">
+        android:id="@+id/radioGroupStatus">
         <RadioButton
             android:text="Member"
             android:layout_width="wrap_content"
