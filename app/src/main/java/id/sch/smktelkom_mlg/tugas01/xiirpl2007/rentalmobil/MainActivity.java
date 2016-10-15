@@ -89,6 +89,7 @@ public class MainActivity extends AppCompatActivity
         rgStatus = (RadioGroup) findViewById(R.id.radioGroupStatus);
 
         tvHasil.setText(nama);
+        tvHasil.setText(nomor);
     }
 }
 
