@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="id.sch.smktelkom_mlg.tugas01.xiirpl2007.rentalmobil.MainActivity">
+
+    <ImageView
+        app:srcCompat="@drawable/mobil"
+        android:id="@+id/imageView"
+        android:contentDescription=""
+        tools:ignore="ContentDescription"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:baselineAlignBottom="false" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="14dp"
+        android:id="@+id/editTextNama"
+        android:hint="Name"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="14dp"
+        android:id="@+id/editTextNomor"
+        android:hint="Telpon"
+        />
+
+    <TextView
+        android:text="Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textView2"
+        android:textSize="15sp"
+        android:textStyle="normal|bold"
+        />
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroupTeam">
+        <RadioButton
+            android:text="Member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonM"
+            tools:ignore="HardcodedText"
+            />
+
+        <RadioButton
+            android:text="Not Member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonNM"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:text="Fasilitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="15sp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <CheckBox
+        android:text="Supir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbSupir" />
+
+    <CheckBox
+        android:text="Bahan Bakar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbBBM"
+        />
+
+    <CheckBox
+        android:text="Air Mineral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbAir"
+        />
+
+    <TextView
+        android:text="Merk Mobil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textSize="15sp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:entries="@array/type"
+        android:id="@+id/spinnerMerk" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/buttonOk" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Hasil"
+        android:id="@+id/textViewHasil"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center" />
+
+</LinearLayout>
+</ScrollView>
